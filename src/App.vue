@@ -17,4 +17,47 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.logo {
+  width: 70px;
+}
+
+.register,
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register input,
+.login input,
+button {
+  border: 1px solid skyblue;
+  border-radius: 3px;
+}
+.register input,
+.login input {
+  height: 25px;
+  width: 300px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.register input:focus,
+.login input:focus {
+  border-color: rgb(23, 158, 211);
+  outline: 0;
+}
+.register button,
+.login button {
+  background: skyblue;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px;
+  height: 29px;
+  width: 314px;
+}
+.register button:active,
+.login button:active {
+  background: rgb(23, 158, 211);
+}
 </style>

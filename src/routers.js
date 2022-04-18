@@ -1,29 +1,41 @@
-import HomePage from './components/HomePage';
-import LoginPage from './components/LoginPage';
-import SignUp from './components/SignUp';
-import { createRouter, createWebHashHistory } from 'vue-router';
+import AddPage from "./components/AddPage";
+import UpdatePage from "./components/UpdatePage";
+import HomePage from "./components/HomePage";
+import LoginPage from "./components/LoginPage";
+import SignUp from "./components/SignUp";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
   {
-    name: 'HomePage',
+    name: "HomePage",
     component: HomePage,
-    path: '/'
+    path: "/",
   },
   {
-    name: 'LoginPage',
+    name: "LoginPage",
     component: LoginPage,
-    path: '/login',
+    path: "/login",
   },
   {
-    name: 'SignUp',
+    name: "SignUp",
     component: SignUp,
-    path: '/sign-up'
+    path: "/sign-up",
+  },
+  {
+    name: "AddPage",
+    component: AddPage,
+    path: "/add",
+  },
+  {
+    name: "UpdatePage",
+    component: UpdatePage,
+    path: "/update",
   },
 ];
 
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-})
+});
 
-export default router
+export default router;

@@ -1,23 +1,17 @@
 <template>
   <HeaderApp />
-  <h1>Olá {{name}}, você está na página de Home</h1>
+  <h1>Pagina de Update Restaurante</h1>
 </template>
 
 <script>
 import HeaderApp from "./HeaderApp.vue";
 export default {
-  name: "HomePage",
-  data() {
-    return {
-      name: "",
-    };
-  },
+  name: "UpdatePage",
   components: {
     HeaderApp,
   },
   mounted() {
     const user = localStorage.getItem("user-info");
-    this.name = JSON.parse(user).name;
     if (!user) {
       this.$router.push({ name: "SignUp" });
     }

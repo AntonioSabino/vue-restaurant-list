@@ -3,13 +3,18 @@
     <a href="#">Home</a>
     <a href="#">Adicionar Restaurante</a>
     <a href="#">Editar Restaurante</a>
-    <a href="#">Sair</a>
+    <a v-on:click="logout" href="#">Sair</a>
   </nav>
 </template>
 
 <script>
 export default {
   name: "HeaderApp",
+  methods: {
+    logout() {
+      localStorage.clear();
+    },
+  },
 };
 </script>
 

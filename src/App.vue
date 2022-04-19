@@ -28,31 +28,36 @@ export default {
 }
 
 .register,
-.login {
+.login,
+.add {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .register input,
 .login input,
+.add input,
 button {
   border: 1px solid skyblue;
   border-radius: 3px;
 }
 .register input,
-.login input {
+.login input,
+.add input {
   height: 25px;
   width: 300px;
   padding-left: 10px;
   margin: 5px;
 }
 .register input:focus,
-.login input:focus {
+.login input:focus,
+.add input:focus {
   border-color: rgb(23, 158, 211);
   outline: 0;
 }
 .register button,
-.login button {
+.login button,
+.add button {
   background: skyblue;
   color: #fff;
   cursor: pointer;
@@ -62,7 +67,8 @@ button {
   width: 314px;
 }
 .register button:active,
-.login button:active {
+.login button:active,
+.add button:active {
   background: rgb(23, 158, 211);
 }
 </style>

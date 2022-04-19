@@ -2,7 +2,6 @@
   <nav class="nav">
     <router-link to="/">Home</router-link>
     <router-link to="/add">Adicionar Restaurante</router-link>
-    <router-link to="/update">Editar Restaurante</router-link>
     <router-link v-on:click="logout" to="/login">Sair</router-link>
   </nav>
 </template>

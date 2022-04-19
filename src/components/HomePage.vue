@@ -7,12 +7,14 @@
       <td>Nome</td>
       <td>Contato</td>
       <td>Endereço</td>
+      <td>Actions</td>
     </tr>
     <tr v-for="restaurant in restaurants" :key="restaurant.id">
-      <td>{{restaurant.id}}</td>
-      <td>{{restaurant.name}}</td>
-      <td>{{restaurant.contact}}</td>
-      <td>{{restaurant.address}}</td>
+      <td>{{ restaurant.id }}</td>
+      <td>{{ restaurant.name }}</td>
+      <td>{{ restaurant.contact }}</td>
+      <td>{{ restaurant.address }}</td>
+      <td><router-link :to="'/update/'+restaurant.id">Update</router-link></td>
     </tr>
   </table>
 </template>

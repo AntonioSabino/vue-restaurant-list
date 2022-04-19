@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     async addRestaurant() {
-      console.log(this.restaurant);
       const result = await axios.post("http://localhost:3000/restaurants", {
         name: this.restaurant.name,
         address: this.restaurant.address,
@@ -54,7 +53,6 @@ export default {
       if (result.status === 201) {
         this.$router.push({ name: "HomePage" });
       }
-      console.log(result);
     },
   },
   mounted() {

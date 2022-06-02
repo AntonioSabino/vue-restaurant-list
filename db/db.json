@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "email": "antonio@sabino.com",
+      "name": "Antonio",
+      "password": "0123456",
+      "id": 1
+    }
+  ],
+  "restaurants": [
+    {
+      "name": "McDonald",
+      "address": "Av. Barão de Mauá, 1037",
+      "contact": "45454545",
+      "id": 1
+    },
+    {
+      "name": "Spoleto",
+      "address": "Av. Barão de Mauá, 1029",
+      "contact": "46465465",
+      "id": 2
+    }
+  ]
+}
